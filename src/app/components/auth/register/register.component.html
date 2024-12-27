@@ -18,32 +18,34 @@
           <form action="">
             <div class="auth-form-group">
               <label for="">Username</label>
-              <input type="text" placeholder="Enter Your Username">
+              <input type="text" class="auth-input" placeholder="Enter Your Username">
             </div>
             <div class="auth-form-group">
               <label for="">Email</label>
-              <input type="text" placeholder="Enter Your Email">
+              <input type="text" class="auth-input" placeholder="Enter Your Email">
             </div>
             <div class="auth-form-group">
               <label for="">Password</label>
               <div class="password">
-                <input [type]="inputType" placeholder="Enter Your Password">
+                <input [type]="inputType" class="auth-input" placeholder="Enter Your Password">
                 <span (click)="togglePassword()"><img [src]="eyeIcon" alt=""></span>
               </div>
             </div>
             <div class="auth-form-group">
               <label for="">Confirm Password</label>
               <div class="password">
-                <input [type]="inputType2" placeholder="Confirm Your Password">
+                <input [type]="inputType2" class="auth-input" placeholder="Confirm Your Password">
                 <span (click)="togglePassword2()"><img [src]="eyeIcon2" alt=""></span>
               </div>
             </div>
             <div class="forgot-password-wrap">
               <div>
-                .
-              </div>
-              <div>
-                <a href="">Forgot Password</a>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    I agree to all the <a href=""><b>terms & conditions</b></a>
+                  </label>
+                </div>
               </div>
             </div>
             <button class="auth-btn mb-3">Sign Up</button>

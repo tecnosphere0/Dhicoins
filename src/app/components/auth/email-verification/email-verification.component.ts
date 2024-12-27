@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-email-verification',
   imports: [],
   templateUrl: './email-verification.component.html',
-  styleUrl: './email-verification.component.css'
+  styleUrls: ['./email-verification.component.scss', '../login/login.component.scss'],
 })
 export class EmailVerificationComponent {
 

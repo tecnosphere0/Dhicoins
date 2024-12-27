@@ -22,7 +22,7 @@ export class AppComponent implements OnInit {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
         // Check if the current route is login or register
-        this.isAuth = this.router.url === '/login' || this.router.url === '/register' || this.router.url === '/forgot-password';
+        this.isAuth = this.router.url === '/login' || this.router.url === '/register' || this.router.url === '/forgot-password' || this.router.url === '/email-verification' || this.router.url === '/reset-password';
       }
     });
   }
