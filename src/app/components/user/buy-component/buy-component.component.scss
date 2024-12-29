@@ -165,7 +165,7 @@
       text-transform: uppercase;
     }
 
-    .terms-p{
+    .terms-p {
       font-size: 13px;
       text-align: center;
       color: #7a7a7a;
@@ -174,9 +174,9 @@
       margin-top: 9px;
     }
 
-    .buy-card-footer{
+    .buy-card-footer {
 
-      .buy-btn{
+      .buy-btn {
         width: 100%;
         height: 40px;
         border-radius: 5px;
@@ -193,6 +193,79 @@
         margin-bottom: 20px;
       }
 
+    }
+
+    .order-summary {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+
+      .order-summary-item {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 0px;
+        padding: 0 5px 5px 5px;
+        margin-bottom: 5px;
+        width: 25%;
+        text-align: center;
+        position: relative;
+
+        &:last-child {
+          &::after {
+            content: unset;
+
+          }
+        }
+
+        &::after {
+          content: ' ';
+          position: absolute;
+          right: 1px;
+          top: 20px;
+          height: 50%;
+          width: 1px;
+          background-color: var(--primarybg);
+        }
+
+        p {
+          margin: 0;
+          font-size: 14px;
+          font-weight: 600;
+          color: #202020;
+        }
+
+        span {
+          font-size: 12px;
+          color: #7a7a7a;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .card-sub-heading {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+   
+
+    .payment-btn{
+      width: 100%;
+      height: 40px;
+      border-radius: 5px;
+      background-color: var(--primary-color);
+      color: #fff;
+      font-weight: 600;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 0;
+      text-transform: uppercase;
     }
 
   }
