@@ -8,12 +8,18 @@ import { BuyComponentComponent } from './components/user/buy-component/buy-compo
 import { EmailVerificationComponent } from './components/auth/email-verification/email-verification.component';
 import { ResetPasswordComponent } from './components/auth/reset-password/reset-password.component';
 import { SellComponentComponent } from './components/user/sell-component/sell-component.component';
+import { ProfileComponentComponent } from './components/user/profile-component/profile-component.component';
+import { FaqComponentComponent } from './components/user/faq-component/faq-component.component';
+import { HistoryComponentComponent } from './components/user/history-component/history-component.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'buy', component: BuyComponentComponent },
   { path: 'sell', component: SellComponentComponent },
+  { path: 'profile', component: ProfileComponentComponent },
+  { path: 'faqs', component: FaqComponentComponent },
+  { path: 'history', component: HistoryComponentComponent },
 
   // Auth Routes
   { path: 'login', component: LoginComponent },

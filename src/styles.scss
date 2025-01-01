@@ -9,6 +9,35 @@ body {
   margin-left: 270px;
   margin-top: 70px;
   border-radius: 10px;
+  overflow: auto;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #dee9fc;
+  border-radius: 10px;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #cddfff;
+  border-radius: 10px;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b4cffe;
+
 }
 
 .breadcrumb {
@@ -87,8 +116,16 @@ body {
   border-radius: 5px;
 }
 
+label.form-label {
+  color: #202020;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 0 3px 0;
+}
 
-input.form-control {
+
+input.form-control,
+select.form-select {
   height: 40px;
   padding: 0 50px 0 15px;
   background-color: #eeeeee;
@@ -144,5 +181,59 @@ input.form-control {
     font-style: italic;
     margin-bottom: 0;
     }
+
+}
+
+
+.dhicoin-modal{
+  background: #ffffff75 !important;
+  backdrop-filter: blur(8px) !important;
+
+  .modal-content{
+    border-radius: 20px;
+    border: none !important;
+  }
+
+  .modal-header{
+    border-bottom: none !important;
+    padding-bottom: 0;
+
+    h1{
+      font-weight: 600;
+    }
+  }
+
+
+  .modal-body{
+    padding-top: 5px;
+  }
+}
+
+
+.offcanvas-backdrop{
+  background: rgba(255, 255, 255, 0.4588235294) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  backdrop-filter: blur(8px) !important;
+}
+
+
+.dhicoin-offcanvus{
+  width: 350px !important;
+  border: 0 !important;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2) !important;
+
+  .offcanvas-title{
+    font-weight: 600;
+  }
+
+}
+
+.dhicoin-offcanvus.buy{
+  border-radius: 0 15px 15px 0;
+
+}
+
+.dhicoin-offcanvus.sell{
+  border-radius:  15px 0 0 15px ;
 
 }

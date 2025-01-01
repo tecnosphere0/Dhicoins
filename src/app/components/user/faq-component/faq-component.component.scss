@@ -1,0 +1,84 @@
+.faqs {
+  margin-top: 10px;
+
+  .dhicoin-accordion {
+    .accordion-item {
+      margin-bottom: 10px;
+      border-radius: 10px;
+      overflow: hidden;
+      border: none !important;
+
+      .accordion-button {
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      .accordion-button:not(.collapsed) {
+        background-color: unset !important;
+        box-shadow: unset !important;
+        color: unset !important;
+      }
+
+      .accordion-button:focus {
+        box-shadow: unset !important;
+      }
+
+      .accordion-body {
+        padding-top: 0 !important;
+        font-size: 13px;
+        color: #767676;
+      }
+    }
+  }
+}
+
+
+.faq-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-left: 10px;
+  position: sticky;
+  top: 0;
+
+  .faq-card-wrap {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    flex-direction: row;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    cursor: pointer;
+
+
+    .img {
+      height: 60px;
+      width: 60px;
+      border-radius: 5px;
+      overflow: hidden;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    h6 {
+      margin: 0;
+      font-weight: 600;
+      color: #202020;
+      font-size: 18px;
+    }
+
+    p{
+      margin: 0;
+      font-size: 14px;
+      color: #767676;
+    }
+
+  }
+}

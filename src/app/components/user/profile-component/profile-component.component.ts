@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-profile-component',
   imports: [],
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './profile-component.component.scss'
 })
 export class ProfileComponentComponent {
-
+ 
 }

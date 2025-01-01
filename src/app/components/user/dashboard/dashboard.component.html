@@ -24,7 +24,7 @@
       <div class="row justify-content-around">
         <div class="col-lg-4">
           <div class="orders-card shadow-sm">
-            <div class="orders-card-wrap">
+            <a class="orders-card-wrap" data-bs-toggle="offcanvas" href="#BuyCanvus" role="button">
               <div>
                 <div class="orders-card-icon">
                   <img src="/assets/dashboard/buy_orders.svg" alt="">
@@ -41,12 +41,12 @@
                   <p><strong>Pending : 0</strong></p>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="orders-card shadow-sm">
-            <div class="orders-card-wrap">
+            <a class="orders-card-wrap" data-bs-toggle="offcanvas" href="#SellCanvus" role="button">
               <div>
                 <div class="orders-card-icon">
                   <img src="/assets/dashboard/buy_orders.svg" alt="">
@@ -63,11 +63,242 @@
                   <p><strong>Pending : 0</strong></p>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
     </div>
   </div>
   <app-currency-cards></app-currency-cards>
+</div>
+
+
+<!-- Buy Orders  -->
+<div class="offcanvas offcanvas-start dhicoin-offcanvus buy" tabindex="-1" id="BuyCanvus"
+  aria-labelledby="BuyCanvusLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="SellCanvusLabel">Buy Orders List</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      <a class="offcanvus-buy-card" data-bs-toggle="modal" data-bs-target="#OrderDetailModal">
+        <div class="img-block">
+          <div class="img">
+            <img src="/assets/coin_imgs/btc.svg" alt="">
+          </div>
+        </div>
+        <div class="block">
+          <div>
+            <h6>BTC <img src="/assets/profile/pending.svg" alt=""></h6>
+            <span>0.03008</span>
+          </div>
+          <div>
+            <p>2000.00 MVR</p>
+            <span>11 September 2024</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="offcanvus-buy-card" data-bs-toggle="modal" data-bs-target="#OrderDetailModal">
+        <div class="img-block">
+          <div class="img">
+            <img src="/assets/coin_imgs/eth.svg" alt="">
+          </div>
+        </div>
+        <div class="block">
+          <div>
+            <h6>ETH <img src="/assets/profile/verified_2.svg" alt=""></h6>
+            <span>0.03008</span>
+          </div>
+          <div>
+            <p>2000.00 MVR</p>
+            <span>11 September 2024</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="offcanvus-buy-card" data-bs-toggle="modal" data-bs-target="#OrderDetailModal">
+        <div class="img-block">
+          <div class="img">
+            <img src="/assets/coin_imgs/solana.svg" alt="">
+          </div>
+        </div>
+        <div class="block">
+          <div>
+            <h6>Solana <img src="/assets/profile/pending.svg" alt=""></h6>
+            <span>0.03008</span>
+          </div>
+          <div>
+            <p>2000.00 MVR</p>
+            <span>11 September 2024</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Sell Orders  -->
+<div class="offcanvas offcanvas-end dhicoin-offcanvus sell" tabindex="-1" id="SellCanvus"
+  aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Sell Orders List</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      <a class="offcanvus-buy-card" data-bs-toggle="modal" data-bs-target="#OrderDetailModal">
+        <div class="img-block">
+          <div class="img">
+            <img src="/assets/coin_imgs/doge.svg" alt="">
+          </div>
+        </div>
+        <div class="block">
+          <div>
+            <h6>DOGE <img src="/assets/profile/pending.svg" alt=""></h6>
+            <span>0.03008</span>
+          </div>
+          <div>
+            <p>2000.00 MVR</p>
+            <span>11 September 2024</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="offcanvus-buy-card" data-bs-toggle="modal" data-bs-target="#OrderDetailModal">
+        <div class="img-block">
+          <div class="img">
+            <img src="/assets/coin_imgs/bnb.svg" alt="">
+          </div>
+        </div>
+        <div class="block">
+          <div>
+            <h6>BNB <img src="/assets/profile/verified_2.svg" alt=""></h6>
+            <span>0.03008</span>
+          </div>
+          <div>
+            <p>2000.00 MVR</p>
+            <span>11 September 2024</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="offcanvus-buy-card" data-bs-toggle="modal" data-bs-target="#OrderDetailModal">
+        <div class="img-block">
+          <div class="img">
+            <img src="/assets/coin_imgs/usdt.svg" alt="">
+          </div>
+        </div>
+        <div class="block">
+          <div>
+            <h6>USDT <img src="/assets/profile/pending.svg" alt=""></h6>
+            <span>0.03008</span>
+          </div>
+          <div>
+            <p>2000.00 MVR</p>
+            <span>11 September 2024</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#OrderDetailModal">
+  Launch demo modal
+</button>
+
+<!-- Buy Order Modal -->
+<div class="modal fade dhicoin-modal" id="OrderDetailModal" tabindex="-1" aria-labelledby="OrderDetailModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="OrderDetailModalLabel">OR23/1896</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="order-detail-body">
+          <div class="date-time-wrap">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 11:00 AM</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> 11 September 2024 , Sunaday</p>
+          </div>
+
+          <div class="order-input-wrap">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="order-input">
+                  <span>MVR</span>
+                  <input type="number" class="amount" value="0.03008" placeholder="0.0000">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="order-input">
+                  <span>CREDI</span>
+                  <input type="number" class="amount" value="0.03008" placeholder="0.0000">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="order-group">
+            <div class="wallet-address">
+              <div>
+                <label for=""  class="form-label">Wallet Address</label>
+              <p>0x9834901x2938x20938-9</p>
+              </div>
+              <button class="copy-btn shadow-sm"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-copy"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></button>
+            </div>
+          </div>
+
+          <div class="order-group">
+            <label for=""  class="form-label">Transaction Status</label>
+            <div class="timeline">
+              <h6 class="timeline-wrap verified">Placed</h6>
+              <h6 class="timeline-wrap">Processed</h6>
+              <h6 class="timeline-wrap">Completed</h6>
+            </div>
+          </div>
+          <div class="order-group">
+            <div class="wallet-address">
+              <div>
+                <label for=""  class="form-label">Bank Recipt</label>
+              </div>
+              <div style="display: flex; gap: 10px;">
+                <button class="copy-btn shadow-sm"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></button>
+                <button class="copy-btn shadow-sm"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="order-group">
+            <div class="wallet-address">
+              <div>
+                <label for=""  class="form-label">Customer Remark</label>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam doloribus maxime blanditiis </p>
+              </div>
+              <button class="copy-btn shadow-sm"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-copy"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></button>
+            </div>
+          </div>
+
+          <div class="order-group">
+            <div class="wallet-address">
+              <div>
+                <label for=""  class="form-label">Employee Remark</label>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam doloribus maxime blanditiis </p>
+              </div>
+              <button class="copy-btn shadow-sm"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-copy"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></button>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <button class="order-btn" data-bs-dismiss="modal" aria-label="Close">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
