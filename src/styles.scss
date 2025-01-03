@@ -10,6 +10,14 @@ body {
   margin-top: 70px;
   border-radius: 10px;
   overflow: auto;
+
+  @media screen and (max-width: 700px) {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 55px;
+    height: calc(100vh - 130px);
+  }
+
 }
 
 
@@ -227,6 +235,25 @@ select.form-select {
   }
 
 }
+
+.dhicoin-offcanvus-bottom{
+  width: 100% !important;
+  border: 0 !important;
+  border-radius: 15px 15px 0 0 !important;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2) !important;
+  height: 45% !important;
+
+
+  .offcanvas-header{
+    padding-bottom: 0 !important;
+
+    .offcanvas-title{
+      font-weight: 600;
+    } 
+  }
+
+}
+
 
 .dhicoin-offcanvus.buy{
   border-radius: 0 15px 15px 0;

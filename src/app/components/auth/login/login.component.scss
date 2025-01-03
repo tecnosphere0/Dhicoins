@@ -1,3 +1,13 @@
+$primary-color: #2479fe;
+$secondary-color: #eeeeee;
+$text-color: #202020;
+$background-color: #ffffff;
+$overlay-color: rgba(0, 0, 0, 0.5);
+
+// Responsive Breakpoints
+$breakpoint-md: 700px;
+$breakpoint-sm: 400px;
+
 .auth-body {
   background-image: url('/assets/auth/auth_bg.png');
   min-height: 100vh;
@@ -6,45 +16,42 @@
   background-position: center;
   background-repeat: no-repeat;
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: $breakpoint-md) {
     background-image: unset;
   }
 
   .wrap {
     min-height: 100vh;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: $overlay-color;
     padding: 70px 50px;
 
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: $breakpoint-md) {
       padding: 0;
       background-color: unset;
     }
 
     .form-card {
       border-radius: 30px;
-      min-height: auto;
-      border: 5px solid #fff;
+      border: 5px solid $background-color;
       display: flex;
       align-items: stretch;
-      position: relative;
       justify-content: flex-end;
+      position: relative;
 
-      @media screen and (max-width: 700px) {
-        border-radius:0;
+      @media screen and (max-width: $breakpoint-md) {
+        border-radius: 0;
       }
-
 
       .img-block {
         width: 50%;
-        min-height: 100%;
         background-color: transparent;
         border-radius: 20px 40px 40px 20px;
-        box-shadow: 40px 0px 0px #fff;
+        box-shadow: 40px 0px 0px $background-color;
         padding: 35px;
         position: relative;
 
-        @media screen and (max-width: 700px) {
+        @media screen and (max-width: $breakpoint-md) {
           display: none;
         }
 
@@ -57,13 +64,13 @@
             font-size: 48px;
             font-family: "Old Standard TT", serif;
             line-height: 40px;
-            color: white;
+            color: $background-color;
             word-spacing: -8px;
           }
 
           p {
-            color: white;
-            border: 2px solid white;
+            color: $background-color;
+            border: 2px solid $background-color;
             display: inline-block;
             padding: 3px 23px;
             border-radius: 26px;
@@ -74,18 +81,18 @@
       }
 
       .card-block {
-        height: auto;
-        background-color: #fff;
         width: 50%;
+        background-color: $background-color;
         border-radius: 0 20px 20px 0;
         padding: 35px;
         display: flex;
         flex-direction: column;
-        @media screen and (max-width: 700px) {
+
+        @media screen and (max-width: $breakpoint-md) {
           width: 100%;
         }
 
-        @media screen and (max-width: 400px) {
+        @media screen and (max-width: $breakpoint-sm) {
           padding: 30px 15px;
         }
 
@@ -93,7 +100,7 @@
           text-align: center;
           padding-bottom: 70px;
 
-          @media screen and (max-width: 700px) {
+          @media screen and (max-width: $breakpoint-md) {
             text-align: start;
           }
 
@@ -103,7 +110,6 @@
         }
 
         .auth-form {
-          width: 100%;
           max-width: 460px;
           margin: 0 auto;
           flex-grow: 1;
@@ -115,16 +121,15 @@
             font-family: "Old Standard TT", serif;
             line-height: 45px;
 
-            @media screen and (max-width: 400px) {
+            @media screen and (max-width: $breakpoint-sm) {
               font-size: 35px;
             }
-
           }
 
           p.tag-line {
             text-align: center;
             font-weight: 500;
-            color: #454545;
+            color: $text-color;
             margin-bottom: 30px;
             font-size: 13px;
           }
@@ -138,7 +143,7 @@
               font-weight: 500;
               margin-bottom: 5px;
               font-size: 14px;
-              color: #202020;
+              color: $text-color;
             }
 
             input.auth-input {
@@ -146,21 +151,21 @@
               height: 40px;
               border-radius: 5px;
               padding: 0 50px 0 15px;
-              background-color: #eeeeee;
+              background-color: $secondary-color;
               outline: none;
-              border: 1px solid #eeeeee;
-              color: #202020;
+              border: 1px solid $secondary-color;
+              color: $text-color;
               font-size: 14px;
               transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 
               &:focus {
-                border-color: #2479fe;
-                box-shadow: #2478fe33 0px 0px 0px 2px;
+                border-color: $primary-color;
+                box-shadow: $primary-color 0px 0px 0px 2px;
                 background-color: transparent;
               }
 
               &::placeholder {
-                color: #7a7a7a;
+                color: lighten($text-color, 30%);
                 font-size: 14px;
               }
             }
@@ -185,12 +190,12 @@
 
             a {
               font-size: 14px;
-              color: #202020;
+              color: $text-color;
             }
 
             label {
               font-size: 14px;
-              color: #202020;
+              color: $text-color;
             }
           }
 
@@ -198,14 +203,14 @@
             width: 100%;
             height: 40px;
             border-radius: 5px;
-            background-color: #2479fe;
-            color: #fff;
+            background-color: $primary-color;
+            color: $background-color;
             border: none;
             outline: none;
             cursor: pointer;
             font-weight: 600;
             font-size: 14px;
-            border: 2px solid #2479fe;
+            border: 2px solid $primary-color;
           }
 
           .auth-social-btn {
@@ -213,13 +218,13 @@
             height: 40px;
             border-radius: 5px;
             background-color: transparent;
-            color: #202020;
+            color: $text-color;
             border: none;
             outline: none;
             cursor: pointer;
             font-weight: 600;
             font-size: 14px;
-            border: 2px solid #eeee;
+            border: 2px solid $secondary-color;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -233,7 +238,7 @@
 
         .auth-footer-p {
           text-align: center;
-          color: #202020;
+          color: $text-color;
           font-size: 14px;
           margin-top: 70px;
 
@@ -243,7 +248,7 @@
 
             &:hover {
               text-decoration: underline;
-              color: black;
+              color: darken($text-color, 10%);
             }
           }
         }
@@ -251,4 +256,3 @@
     }
   }
 }
-
