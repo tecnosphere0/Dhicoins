@@ -61,7 +61,7 @@
             <h6>United Bank Limited <img src="assets/profile/pending.svg" class="bank-verified" alt=""></h6>
           </div>
         </div>
-        <button class="edit-btn shadow-sm"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+        <button class="edit-btn shadow-sm" data-bs-toggle="modal" data-bs-target="#bank-acount-edit"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
             stroke-linejoin="round" class="feather feather-edit">
             <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
@@ -88,7 +88,7 @@
             <h6>American Express <img src="assets/profile/verified_2.svg" class="  bank-verified" alt=""></h6>
           </div>
         </div>
-        <button class="edit-btn shadow-sm"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+        <button class="edit-btn shadow-sm" data-bs-toggle="modal" data-bs-target="#bank-acount-edit"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
             stroke-linejoin="round" class="feather feather-edit">
             <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
@@ -265,7 +265,7 @@
             </div>
           </div>
         </div>
-        <button class="edit-btn edit-btn-sm shadow-sm"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+        <button class="edit-btn edit-btn-sm shadow-sm" data-bs-toggle="modal" data-bs-target="#bank-acount-edit"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
             stroke-linejoin="round" class="feather feather-edit">
             <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
@@ -285,7 +285,7 @@
             </div>
           </div>
         </div>
-        <button class="edit-btn edit-btn-sm shadow-sm"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+        <button class="edit-btn edit-btn-sm shadow-sm" data-bs-toggle="modal" data-bs-target="#bank-acount-edit"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
             stroke-linejoin="round" class="feather feather-edit">
             <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
@@ -445,6 +445,55 @@
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title fs-5" id="bank-acountLabel">Add Bank Account</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="personal-form">
+          <form action="">
+
+            <div class="mb-3">
+              <label for="" class="form-label">Select Bank</label>
+              <select name="" id="" class="form-select">
+                <option value="">Select Bank</option>
+              </select>
+            </div>
+
+
+            <div class="mb-3">
+              <label for="" class="form-label">Name</label>
+              <input type="text" placeholder="Name As Per Bank Account" class="form-control">
+            </div>
+
+            <div class="mb-3">
+              <label for="" class="form-label">Account Number </label>
+              <input type="text" placeholder="Account Number" class="form-control">
+            </div>
+
+            <div class="disclaimer">
+              <p class="note text-start" style="font-size: 13px;">
+                NOTE:
+              </p>
+              <p>Enter your MVR account number registered under your name only. USD accounts are not accepted</p>
+              <p>Buying and selling will be done via the MVR account number given here.
+                Therefore, no third-party account is allowed under any circumstances.</p>
+            </div>
+          </form>
+        </div>
+        <div class="persoanl-form-footer">
+          <button class="save-btn">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade dhicoin-modal" id="bank-acount-edit" tabindex="-1" aria-labelledby="bank-acountLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="bank-acountLabel">Edit Bank Account</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
