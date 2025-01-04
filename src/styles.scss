@@ -16,6 +16,7 @@ body {
     margin-left: 0;
     margin-top: 55px;
     height: calc(100vh - 130px);
+    padding-bottom: 20px;
   }
 
 }
@@ -197,9 +198,10 @@ select.form-select {
   background: #ffffff75 !important;
   backdrop-filter: blur(8px) !important;
 
+
   .modal-content{
     border-radius: 20px;
-    border: none !important;
+    border: 1px solid #dedede !important;
   }
 
   .modal-header{
@@ -249,7 +251,7 @@ select.form-select {
 
     .offcanvas-title{
       font-weight: 600;
-    } 
+    }
   }
 
 }

@@ -11,9 +11,11 @@ import { SellComponentComponent } from './components/user/sell-component/sell-co
 import { ProfileComponentComponent } from './components/user/profile-component/profile-component.component';
 import { FaqComponentComponent } from './components/user/faq-component/faq-component.component';
 import { HistoryComponentComponent } from './components/user/history-component/history-component.component';
+import { IndexComponent } from './components/user/index/index.component';
 
 export const routes: Routes = [
-  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+  { path: '', redirectTo: '/index', pathMatch: 'full' },
+  { path: 'index', component: IndexComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'buy', component: BuyComponentComponent },
   { path: 'sell', component: SellComponentComponent },

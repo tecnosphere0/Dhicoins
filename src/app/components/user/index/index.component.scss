@@ -1,0 +1,618 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Raleway', sans-serif;
+}
+
+:root {
+
+  --primary-color: #007bff;
+  --primary-bg: #007bff;
+  --Secondary-color: #05db89;
+  --white: #ffffff;
+  --grey: #707070;
+  --light-grey: #dbdbdb;
+  --label-color: #cecaca;
+  --dark-bg: #3c434f;
+  --black: #ffffff;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700 !important;
+}
+
+.banner {
+  background-image: url('/media/images/banner-bg.png');
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+
+.header {
+  padding: 10px 30px;
+}
+
+.secondary-button {
+  background-color: transparent;
+  border-radius: 20px;
+  font-size: 13px;
+  padding: 10px 40px;
+  border: 0;
+  color: white;
+  box-shadow: unset;
+  font-weight: 700;
+  outline: 0;
+  background-image: linear-gradient(78deg, #05db89, #ffffff73);
+  transition: all 500ms ease-in-out !important;
+  text-transform: uppercase;
+}
+
+.secondary-button:hover {
+  background-image: linear-gradient(250deg, #05db89, #ffffff73);
+  transition: all 500ms ease-in-out !important;
+}
+
+
+.dhicoin-nav {
+  gap: 10px;
+  margin: 0px 30px;
+}
+
+.dhicoin-nav li a {
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.dhicoin-nav li a:hover, .dhicoin-nav li a.active {
+  color: #05db89 !important;
+  cursor: pointer;
+
+}
+
+.banner-content h1 {
+  color: #000000;
+  font-weight: 800;
+}
+
+.banner-wrap {
+  padding: 50px 0px;
+}
+
+.banner-content p {
+  color: #707070;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.about-section {
+  background-color: #3c434f;
+  padding: 80px 0px;
+}
+
+.about-section h1 {
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.about-section p {
+  color: #ffffff;
+  font-weight: 300;
+}
+
+.about-card {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 50px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.primary-button {
+  border-radius: 30px;
+  font-size: 15px;
+  padding: 12px 40px;
+  border: 0;
+  color: black;
+  box-shadow: unset;
+  font-weight: 700;
+  outline: 0;
+  transition: all 300ms ease-in-out !important;
+  text-transform: uppercase;
+  background-color: white;
+}
+
+.primary-button:hover {
+  background-color: transparent;
+  color: white;
+  background-image: linear-gradient(120deg, #007bff, #ffffff73);
+  transition: all 300ms ease-in-out !important;
+}
+
+.about-card img {
+  height: 120px;
+}
+
+.about-card h3 {
+  margin: 20px 0px;
+  font-weight: 600;
+}
+
+.about-card p {
+  color: #707070;
+}
+
+.tools {
+  padding: 50px 0px;
+}
+
+.default-p {
+  color: #707070;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.blockchain {
+  background-image: linear-gradient(to right, #007bff 0%, #6c74abb8 100%);
+  padding: 80px 0px;
+}
+
+.blockchain h1 {
+  color: #ffffff;
+}
+
+.blockchain-card {
+  color: #ffffff !important;
+  padding: 0px 5px;
+}
+
+.blockchain-card i {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.dhicoin-detail {
+  padding: 80px 0px;
+}
+
+.dhicoin-detail img {
+  height: 400px;
+}
+
+.register-login-section-wrap {
+  background-image: linear-gradient(to right, #007bff 0%, #6c74abb8 100%);
+  padding: 30px 100px;
+}
+
+.register-login-section-wrap h2,
+.register-login-section-wrap p {
+  color: #ffffff;
+}
+.register-login-section-wrap p{
+  font-size: 13px;
+}
+
+.section-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-icon {
+  color: #ffffff;
+  padding-right: 20px;
+  font-size: 20px;
+  transition: all 200ms ease-in-out;
+}
+
+.register-login-section-wrap:hover .section-icon {
+  padding-right: 0px;
+  transition: all 200ms ease-in-out;
+}
+
+.footer {
+  padding: 50px 0px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #dbdbdb;
+  border-top: 1px solid #dbdbdb;
+}
+
+.footer-text {
+  color: #707070;
+  font-size: 13px;
+}
+
+.footer h4 {
+  text-transform: uppercase;
+}
+
+.footer-ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.footer-ul li {
+  list-style: none;
+}
+
+.footer-ul li a {
+  color: #707070;
+  font-size: 13px;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  transition: all 200ms ease-in-out;
+}
+
+.footer-ul li a:hover {
+  color: #05db89;
+  padding-left: 10px;
+  transition: all 200ms ease-in-out;
+}
+
+.bottom-bar {
+  padding: 20px 0px;
+}
+
+.payment-option {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-icon {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-icon a {
+  color: #cecaca;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
+
+.footer-icon a:hover {
+  color: #05db89;
+  transition: all 200ms ease-in-out;
+}
+
+.faqs {
+  padding: 80px 0px;
+}
+
+.faq-h1 {
+  color: #05db89;
+
+}
+
+.dhicoin-accordion {
+  border: 1px solid #dbdbdb !important;
+  border-radius: 5px !important;
+  overflow: hidden !important;
+  margin-bottom: 10px !important;
+}
+
+.dhicoin-accordion-button.collapsed {
+  background-color: #dbdbdb !important;
+}
+
+.dhicoin-accordion-button {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  box-shadow: unset !important;
+  padding: 18px !important;
+  font-weight: 700;
+}
+
+
+
+.faqs-collapse-wrap {
+  margin-top: 40px;
+}
+
+.blockchain-tabs {
+  padding: 80px 0px;
+  background-color: #3c434f;
+}
+
+.blockchain-nav-tab-sec {
+  display: flex;
+}
+
+.didhicoin-tab-sec {
+  display: flex;
+  justify-content: end;
+
+}
+
+.didhicoin-tab-sec .tab-wrap {
+  margin: 0px 15px 30px 15px;
+}
+
+.dhicoin-tab {
+  border: 0;
+  border-radius: 5px;
+  height: 130px;
+  width: 130px;
+  background-color: #ffffff !important;
+  position: relative;
+}
+
+.dhicoin-tab::after {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 20%;
+  width: 100%;
+  height: 1px;
+  content: '';
+  -webkit-animation: moving 1s linear infinite;
+  animation: moving 1s linear infinite;
+  background: url(/media/images/line.png) repeat 0 0;
+}
+
+@keyframes moving {
+  from {
+      background-position: 0 0;
+  }
+
+  to {
+      background-position: 40px 0;
+  }
+}
+
+.dhicoin-tab.active {
+  background-color: transparent;
+  background-image: linear-gradient(250deg, #05db89, #ffffff73) !important;
+}
+
+.dhicoin-tab.active i {
+  color: #ffffff;
+}
+
+.dhicoin-tab i {
+  color: #000000;
+  font-size: 40px;
+}
+
+.dhicoin-tab:hover {
+  background-color: transparent;
+  background-image: linear-gradient(250deg, #05db89, #ffffff73) !important;
+}
+
+.dhicoin-tab:hover i {
+  color: #ffffff;
+}
+
+.dhicoin-tab-content h2, .dhicoin-tab-content p {
+  color: #ffffff;
+}
+
+.blockchain-tabs h1 {
+  color: #ffffff;
+}
+
+/* calculator css */
+.calculator-area {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.calculator {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.calculator-wrap {
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #f7f5f5;
+}
+
+.Dhicoin-Calculator {
+  width: 100% !important;
+  margin: 0px !important;
+}
+
+.Dhicoin-Calculator li {
+  width: 50%;
+}
+
+.Dhicoin-Calculator li button {
+  width: 100% !important;
+  color: #000000;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.Dhicoin-Calculator li button.active {
+  background-color: #007bff47 !important;
+  color: #007bff !important;
+}
+
+.cal-tab-wrap {
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  position: relative;
+}
+
+.cal-ui-wrap {
+  padding: 10px 15px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  position: relative;
+}
+
+.calculator-label label {
+  font-size: 11px;
+  color: #707070;
+  font-weight: 700;
+}
+
+.cal-input-wrap {
+  display: flex;
+  gap: 10px;
+}
+
+.cal-input-wrap .cal-input {
+  border: 0px;
+  height: 40px;
+  width: 100%;
+  border-bottom: 1px solid #cecaca;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.cal-input:focus {
+  outline: none !important;
+}
+
+.cal-input-wrap .cal-select {
+  width: 80px;
+  border: 1px solid #dbdbdb !important;
+  border-radius: 5px;
+  padding: 10px 5px;
+}
+
+.cal-message label {
+  font-size: 12px;
+  color: #707070;
+  font-weight: 500;
+}
+
+.calculator-button {
+  background-color: #007bff !important;
+  color: #ffffff !important;
+  width: 100%;
+  font-size: 15px !important;
+  padding: 10px !important;
+  font-weight: 600;
+}
+
+.cal-swap-wrap {
+  position: relative;
+  height: 40px;
+}
+
+.cal-swap {
+  height: 60px;
+  width: 60px;
+  border-radius: 100px;
+  position: absolute;
+  z-index: 999;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5px;
+}
+.cal-swap-inner{
+  border-radius: 100px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.cal-swap-inner i{
+  color: black !important;
+  display: block;
+  transform: rotate(90deg);
+  font-size: 17px;
+}
+
+
+
+/* Media queries  */
+@media screen and (max-width: 991px) {
+
+  .hidden-btn {
+      display: none;
+  }
+
+  .header {
+      background-color: #ffffff;
+      padding: 10px 0px;
+  }
+
+  .dhicoin-nav li a {
+      color: #000000;
+      font-weight: 600;
+      border-bottom: 1px solid #dbdbdb;
+  }
+  .dhicoin-nav li:last-child a{
+      border-bottom:  0px ;
+  }
+
+  .dhicoin-nav {
+      margin: 10px 10px;
+  }
+
+  .dhicoin-tab-wrap {
+      display: flex;
+  }
+
+  .didhicoin-tab-sec {
+      justify-content: center;
+  }
+
+  .dhicoin-tab {
+      height: 80px;
+      width: 80px;
+  }
+
+  .dhicoin-tab i {
+      font-size: 20px;
+  }
+
+  .dhicoin-tab-wrap {
+      justify-content: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .hidden-sm {
+      display: none !important;
+  }
+
+  .payment-option {
+      justify-content: center;
+      margin-bottom: 10px;
+  }
+
+  .footer-icon {
+      justify-content: center;
+  }
+
+  .footer {
+      padding: 30px 0px;
+  }
+  .banner-content{
+      margin-top: 30px;
+  }
+
+}
+
+@media screen and (max-width: 575px) {
+  .dhicoin-tab {
+      height: 50px;
+      width: 50px;
+  }
+
+  .dhicoin-tab i {
+      font-size: 10px;
+  }
+
+  .didhicoin-tab-sec .tab-wrap {
+      margin: 0px 5px 10px 5px;
+  }
+  .calculator-area{
+      width: 320px;
+  }
+}

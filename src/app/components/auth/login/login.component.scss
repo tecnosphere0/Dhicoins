@@ -248,7 +248,7 @@ $breakpoint-sm: 400px;
 
             &:hover {
               text-decoration: underline;
-              color: darken($text-color, 10%);
+              color: $text-color, 10%;
             }
           }
         }
