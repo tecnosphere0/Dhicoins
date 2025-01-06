@@ -1,54 +1,37 @@
-<div class="auth-body">
-  <div class="wrap">
-    <div class="form-card">
-      <div class="img-block">
-        <div class="img-block-wrap">
-          <h2>Make <br> Sure Your Are <br> On Correct URL</h2>
-          <p>https:dhicoins.com</p>
-        </div>
-      </div>
-      <div class="card-block">
-        <div class="logo">
-          <img src="/assets/logo/dhicoins.png" alt="">
-        </div>
-        <div class="auth-form">
-          <h2>Welcome Back</h2>
-          <p class="tag-line">Enter your eamil and password to acsess your account</p>
+<div class="auth-form">
+  <h2>Welcome Back</h2>
+  <p class="tag-line">Enter your eamil and password to acsess your account</p>
 
-          <form action="">
-            <div class="auth-form-group">
-              <label for="">Email</label>
-              <input type="text" class="auth-input" placeholder="Enter Your Email">
-            </div>
-            <div class="auth-form-group">
-              <label for="">Password</label>
-              <div class="password">
-                <input [type]="inputType" class="auth-input" placeholder="Enter Your Password">
-                <span (click)="togglePassword()"><img [src]="eyeIcon" alt=""></span>
-              </div>
-            </div>
-            <div class="forgot-password-wrap">
-              <div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">
-                    Remember Me
-                  </label>
-                </div>
-              </div>
-              <div>
-                <a href="">Forgot Password</a>
-              </div>
-            </div>
-            <button class="auth-btn mb-3">Sign In</button>
-            <button class="auth-social-btn"><img src="/assets/auth/google.svg" alt=""> Sign In With Google</button>
-
-            <p class="auth-footer-p">
-              Don't have an account? <a href="register">Sign Up</a>
-            </p>
-          </form>
-        </div>
+  <form action="">
+    <div class="auth-form-group">
+      <label for="">Email</label>
+      <input type="text" class="auth-input" placeholder="Enter Your Email">
+    </div>
+    <div class="auth-form-group">
+      <label for="">Password</label>
+      <div class="password">
+        <input [type]="inputType" class="auth-input" placeholder="Enter Your Password">
+        <span (click)="togglePassword()"><img [src]="eyeIcon" alt=""></span>
       </div>
     </div>
-  </div>
+    <div class="forgot-password-wrap">
+      <div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Remember Me
+          </label>
+        </div>
+      </div>
+      <div>
+        <a href="">Forgot Password</a>
+      </div>
+    </div>
+    <button class="auth-btn mb-3">Sign In</button>
+    <button class="auth-social-btn"><img src="/assets/auth/google.svg" alt=""> Sign In With Google</button>
+
+    <p class="auth-footer-p">
+      Don't have an account? <a href="register">Sign Up</a>
+    </p>
+  </form>
 </div>

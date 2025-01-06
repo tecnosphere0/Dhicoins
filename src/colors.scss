@@ -6,7 +6,6 @@
   --secondary-color: #f0f3f8;
   --alpha: #05db89;
 
-
   --primarybg: #2479fe;
   --primary-light-bg: #fff;
   --secondary-bg: #ffffff;
@@ -40,10 +39,103 @@
   --breakpoint-md: 700px;
   --breakpoint-sm: 400px;
 
+}
+
+
+
+body[data-theme='light'] {
+  --body-color: #f0f3f8;
+
+  --form-primary-color: #2479fe;
+  --form-secondary-color: #eeeeee;
+  --form-text-color: #202020;
+  --form-background-color: #ffffff;
+  --form-overlay-color: rgba(0, 0, 0, 0.3);
+  --form-heading-color: #202020;
+  --form-block-color:#fff;
+
+  --breakpoint-md: 700px;
+  --breakpoint-sm: 400px;
+}
+
+
+body[data-theme='dark'] {
+  --body-color: #121212;
+
+  --form-primary-color: #2479fe;
+  --form-secondary-color: #2a2a2a;
+  --form-text-color: #ffffff;
+  --form-background-color: #1e1e1e;
+  --form-overlay-color: rgba(0, 0, 0, 0.6);
+  --form-heading-color: #FFF;
+  --form-block-color:#fff;
+
+
+
+  --breakpoint-md: 700px;
+  --breakpoint-sm: 400px;
+}
 
 
 
 
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  background-color: #2479fe;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-moon {
+  color: #f1c40f;
+}
+
+.fa-sun {
+  color: #f39c12;
+}
+
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked+.checkbox-label .ball {
+  transform: translateX(24px);
+}
 
 
+/*  Support me if you like it */
+.support {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+.support a {
+  color: #292c35;
+  font-size: 32px;
+  backface-visibility: hidden;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.support a:hover {
+  transform: scale(1.1);
 }

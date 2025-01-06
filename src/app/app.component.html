@@ -16,14 +16,51 @@
 
 <body>
 
-  <div *ngIf="!isAuth">
+  <div *ngIf="!isAuth && !isIndexPage">
     <app-sidebar></app-sidebar>
     <div class="content">
+      <div>
+        <!-- <button (click)="toggleTheme()">
+          {{ isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode' }}
+        </button> -->
+      </div>
+
       <router-outlet></router-outlet>
     </div>
   </div>
 
   <div *ngIf="isAuth">
+    <div class="auth-body">
+      <div class="wrap">
+        <div class="form-card">
+          <div class="img-block">
+            <div class="img-block-wrap">
+              <h2>Make <br> Sure Your Are <br> On Correct URL</h2>
+              <p>https:dhicoins.com</p>
+
+            </div>
+          </div>
+          <div class="card-block">
+            <div class="theme-toggle-auth">
+              <input type="checkbox" class="checkbox" id="checkbox" (change)="toggleTheme($event)" [checked]="isDarkMode">
+              <label for="checkbox" class="checkbox-label">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <span class="ball"></span>
+              </label>
+            </div>
+            <div class="logo">
+              <img src="/assets/logo/dhicoins.png" alt="">
+            </div>
+
+            <router-outlet></router-outlet>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="isIndexPage">
     <router-outlet></router-outlet>
   </div>
 

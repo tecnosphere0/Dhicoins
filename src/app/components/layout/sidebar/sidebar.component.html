@@ -13,6 +13,15 @@
         </svg>
         <input type="text" placeholder="Search Something Here...">
       </div>
+      <div>
+        <input type="checkbox" class="checkbox" id="checkbox" [checked]="isDarkMode" (change)="onThemeToggle($event)">
+        <label for="checkbox" class="checkbox-label">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <span class="ball"></span>
+        </label>
+      </div>
+
       <button class="theme-button"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
           fill="none" stroke="#657792" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
           class="feather feather-sun">

@@ -2,3 +2,120 @@
   font-family: "Montserrat", serif;
   transition: all ease-in-out 0.3s;
 }
+
+
+
+.auth-body {
+  background-image: url('/assets/auth/auth_bg.png');
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media screen and (max-width: var(--breakpoint-md)) {
+    background-image: unset;
+  }
+
+  .wrap {
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--form-overlay-color);
+    padding: 70px 50px;
+
+    @media screen and (max-width: var(--breakpoint-md)) {
+      padding: 0;
+      background-color: unset;
+    }
+
+    .form-card {
+      border-radius: 30px;
+      border: 5px solid var(--form-background-color);
+      display: flex;
+      align-items: stretch;
+      justify-content: flex-end;
+      position: relative;
+
+      @media screen and (max-width: var(--breakpoint-md)) {
+        border-radius: 0;
+      }
+
+      .img-block {
+        width: 50%;
+        background-color: transparent;
+        border-radius: 20px 40px 40px 20px;
+        box-shadow: 40px 0px 0px var(--form-background-color);
+        padding: 35px;
+        position: relative;
+
+        @media screen and (max-width: var(--breakpoint-md)) {
+          display: none;
+        }
+
+        .img-block-wrap {
+          position: absolute;
+          bottom: 0;
+
+          h2 {
+            text-align: start;
+            font-size: 48px;
+            font-family: "Old Standard TT", serif;
+            line-height: 40px;
+            color: var(--form-block-color);
+            word-spacing: -8px;
+          }
+
+          p {
+            color: var(--form-block-color);
+
+            border: 2px solid var(--form-block-color);
+            display: inline-block;
+            padding: 3px 23px;
+            border-radius: 26px;
+            font-weight: 500;
+            margin-bottom: 30px;
+          }
+        }
+      }
+
+      .card-block {
+        width: 50%;
+        background-color: var(--form-background-color);
+        border-radius: 0 20px 20px 0;
+        padding: 35px;
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (max-width: var(--breakpoint-md)) {
+          width: 100%;
+        }
+
+        @media screen and (max-width: var(--breakpoint-sm)) {
+          padding: 30px 15px;
+        }
+
+        .logo {
+          text-align: center;
+          padding-bottom: 70px;
+
+          @media screen and (max-width: var(--breakpoint-md)) {
+            text-align: start;
+          }
+
+          img {
+            height: 40px;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+
+
+.theme-toggle-auth{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}

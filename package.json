@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build:light": "node-sass src/colors.scss src/assets/colors.css",
+    "build:dark": "node-sass src/colors_dark.scss src/assets/colors_dark.css"
   },
   "private": true,
   "dependencies": {
