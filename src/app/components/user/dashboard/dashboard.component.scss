@@ -42,6 +42,7 @@
 
       h6 {
         margin: 0;
+        color: var(--text-color);
       }
 
       p.verified {
@@ -68,7 +69,7 @@
     cursor: pointer;
     width: 100%;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.737);
+    background-color: var(--dashboard-card-bg);
     border-radius: 10px;
     padding: 15px;
 
@@ -102,17 +103,21 @@
           margin: 0;
           font-weight: 500;
           font-size: 24px;
+          color: var(--text-color);
         }
 
         p {
           margin: 0;
           font-size: 14px;
+          color: var(--text-color);
+
         }
 
         span {
           font-style: italic;
           font-size: 13px;
           font-weight: 600;
+          color: var(--text-color);
         }
 
       }
@@ -120,6 +125,8 @@
     }
   }
 }
+
+
 
 .offcanvus-buy-card {
   border-bottom: 1px solid #dedede;
@@ -154,6 +161,7 @@
       margin: 0;
       font-size: 22px;
       line-height: 22px;
+      color: var(--text-color);
 
       img {
         height: 25px;
@@ -164,11 +172,12 @@
 
     span {
       font-size: 13px;
-      color: #767676;
+      color: var(--text-color-secondary);
+
     }
 
     p {
-      color: #202020;
+      color: var(--text-color);
       margin: 0;
       font-size: 15px;
       line-height: 22px;
@@ -218,6 +227,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      color: var(--text-color);
 
       span {
         font-size: 18px;
@@ -232,6 +242,8 @@
         font-weight: 500;
         text-align: end;
         width: 100%;
+        color: var(--text-color);
+
       }
 
       /* For Chrome, Safari, Edge, and Opera */
@@ -259,6 +271,7 @@
       margin: 0;
       font-size: 13px;
       line-height: 13px;
+      color: var(--text-color-fade)
     }
 
     .copy-btn {
@@ -289,6 +302,7 @@
     .timeline-wrap {
       position: relative;
       padding-left: 30px;
+      color: var(--text-color-fade);
 
       &::before {
         content: "";
