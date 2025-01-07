@@ -7,16 +7,20 @@
       border-radius: 10px;
       overflow: hidden;
       border: none !important;
+      background-color: var(--card-bg) !important;
 
       .accordion-button {
         font-size: 18px;
         font-weight: 600;
+        background-color: var(--card-bg) !important;
+        color: var(--text-color) !important;
       }
 
       .accordion-button:not(.collapsed) {
         background-color: unset !important;
         box-shadow: unset !important;
-        color: unset !important;
+        color: var(--text-color) !important;
+
       }
 
       .accordion-button:focus {
@@ -26,7 +30,7 @@
       .accordion-body {
         padding-top: 0 !important;
         font-size: 13px;
-        color: #767676;
+        color: var(--text-color-secondary);
       }
     }
   }
@@ -48,7 +52,7 @@
     align-items: start;
     gap: 10px;
     flex-direction: row;
-    background-color: #fff;
+    background-color: var(--card-bg);
     padding: 15px;
     border-radius: 10px;
     width: 100%;
@@ -70,13 +74,13 @@
     h6 {
       margin: 0;
       font-weight: 600;
-      color: #202020;
+      color: var(--text-color);
       font-size: 18px;
     }
 
-    p{
+    p {
       margin: 0;
-      font-size: 14px;
+      font-size: var(--text-color-secondary);
       color: #767676;
     }
 

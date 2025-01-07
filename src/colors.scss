@@ -11,10 +11,10 @@
   --secondary-bg: #ffffff;
 
   // Sidebar color
-  --sidebar-a: #657792;
-  --sidebar-active: #fff;
-  --sidebar-active-bg: #2479fe;
-  --sidebar-active-bg-hover: #2479fe24;
+  // --sidebar-a: #657792;
+  // --sidebar-active: #fff;
+  // --sidebar-active-bg: #2479fe;
+  // --sidebar-active-bg-hover: #2479fe24;
 
   --sidebar-border-color: #2479fe24;
 
@@ -52,10 +52,39 @@ body[data-theme='light'] {
   --form-background-color: #ffffff;
   --form-overlay-color: rgba(0, 0, 0, 0.3);
   --form-heading-color: #202020;
-  --form-block-color:#fff;
+  --form-block-color: #fff;
 
-  --breakpoint-md: 700px;
-  --breakpoint-sm: 400px;
+  // navbar color
+  --navbar-bg: #fff;
+  --navbar-border-color: #2479fe24;
+
+  // sidebar color
+  --sidebar-bg: #fff;
+
+  // Sidebar color
+  --sidebar-a: #657792;
+  --sidebar-active: #fff;
+  --sidebar-active-bg: #2479fe;
+  --sidebar-active-bg-hover: #2479fe24;
+
+  //text color
+  --text-color: #202020;
+  --text-color-fade:#212529;
+  --text-color-secondary: #767676;
+
+  //dashboard color
+  --dashboard-card-bg: rgba(255, 255, 255, 0.737);
+  --card-bg: rgba(255, 255, 255, 0.737);
+  --profile-modal-bg: #fff;
+
+
+  // offcanvus-backdrop
+  --backdrop-color: rgba(255, 255, 255, 0.4588235294);
+  --modal-border-color: #dedede;
+
+
+  --svg-color:#657792;
+
 }
 
 
@@ -68,12 +97,39 @@ body[data-theme='dark'] {
   --form-background-color: #1e1e1e;
   --form-overlay-color: rgba(0, 0, 0, 0.6);
   --form-heading-color: #FFF;
-  --form-block-color:#fff;
+  --form-block-color: #fff;
+
+  // navbar color
+  --navbar-bg: #2d2d2d;
+  --navbar-border-color: #333333;
+
+  // sidebar color
+  --sidebar-bg: #2d2d2d;
+
+  // Sidebar color
+  --sidebar-a: #fff;
+  --sidebar-active: #fff;
+  --sidebar-active-bg: #2479fe;
+  --sidebar-active-bg-hover: #2479fe24;
+
+  //text color
+  --text-color: #ffffff;
+  --text-color-fade:#d7d7d7;
+  --text-color-secondary: #afafaf;
 
 
+  //dashboard color
+  --dashboard-card-bg: #2d2d2d;
+  --card-bg: #2d2d2d;
+  --profile-modal-bg: #2d2d2d;
 
-  --breakpoint-md: 700px;
-  --breakpoint-sm: 400px;
+  //backdrop
+  --backdrop-color: rgba(0, 0, 0, 0.4588235294);
+  --modal-border-color: transparent;
+
+  --svg-color:#fff;
+
+
 }
 
 

@@ -4,7 +4,7 @@
   border-radius: 10px;
   padding: 20px 30px;
   margin: 0 0 20px 0;
-  background-color: #fff;
+  background-color: var(--card-bg);
 
   @media screen and (max-width: 700px) {
     display: none;
@@ -17,7 +17,7 @@
     padding-bottom: 5px;
 
     h3 {
-      color: #202020;
+      color: var(--text-color);
       margin: 0;
       font-weight: 600;
     }
@@ -36,10 +36,12 @@
         font-size: 18px;
         font-weight: 600;
         margin: 5px 0;
+        color: var(--text-color);
+
       }
 
       p {
-        color: #767676;
+        color: var(--text-color-secondary);
         font-size: 13px;
         margin: 0;
       }
@@ -157,7 +159,7 @@
   }
 
   .mobile-title-heading {
-    color: #202020;
+    color: var(--text-color);
     margin: 0;
     font-weight: 600;
     padding: 0;
@@ -168,7 +170,7 @@
 
 .mobile-profile-card {
   padding: 10px 15px;
-  background-color: #fff;
+  background-color: var(--card-bg);
   display: flex;
   align-items: center;
   gap: 10px;
@@ -196,6 +198,7 @@
     h4 {
       margin: 0;
       font-size: 20px;
+      color: var(--text-color);
     }
   }
 
@@ -231,6 +234,7 @@
         font-size: 14px;
         font-weight: 600;
         margin: 0;
+        color: var(--text-color);
 
         img {
           height: 30px;
@@ -239,7 +243,7 @@
       }
 
       span {
-        color: #767676;
+        color: var(--text-color-secondary);
         font-size: 12px;
         margin: 0;
       }
@@ -256,6 +260,7 @@
     h6 {
       margin-top: 8px;
       font-size: 15px;
+      color: var(--text-color);
     }
   }
 
